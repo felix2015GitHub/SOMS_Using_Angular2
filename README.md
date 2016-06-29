@@ -1,1 +1,1 @@
-# SOMS_Using_Angular2
+# Simple Order Management System Using Angular2
