@@ -1,13 +1,23 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
-/*
-import { CrisisListComponent }  from './crisis-list.component';
-import { HeroListComponent }    from './hero-list.component';
+import { MembersComponent } from './members.component';
+import { ProductsComponent } from './products.component';
+import { OrdersComponent } from './orders.component';
 
-export const routes: RouterConfig = [
-  { path: 'crisis-center', component: CrisisListComponent },
-  { path: 'heroes', component: HeroListComponent }
+const routes: RouterConfig = [
+  {
+    path: 'members',
+    component: MembersComponent
+  },
+  {
+    path: 'products',
+    component: ProductsComponent
+  },
+  {
+    path: 'orders',
+    component: OrdersComponent
+  }
 ];
-*/
+
 export const APP_ROUTER_PROVIDERS = [
   provideRouter(routes)
 ];
