@@ -6,6 +6,6 @@ import { Router } from '@angular/router';
   templateUrl: 'app/home.component.html'
 })
 
-export class HomeComponent implements OnInit {
-  
+export class HomeComponent {
+
 }

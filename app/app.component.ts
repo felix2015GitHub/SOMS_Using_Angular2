@@ -17,7 +17,7 @@ import { MembersService } from './members.service';
             &#9776;
           </button>
           <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-            <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="active">{{title}}</a>
+            <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active">{{title}}</a>
             <ul class="nav navbar-nav">
               <li class="nav-item">
                 <a [routerLink]="['/members']" routerLinkActive="active" class="nav-link">會員管理</a>

@@ -1,14 +1,19 @@
 <div class="row" style="margin-top:60px">
   	<div class="col-sm-12">
-    	<a class="btn btn-secondary" style="margin-top:10px;">新增會員</a>
+        <a class="btn btn-secondary" style="margin-top:10px;" (click)="addMember()">新增會員</a>
   	</div>
 </div>
 <table class="table">
-	<thead>
-  		<tr>
-  			<th sortable="'No'">#</th>
-    		<th sortable="'Name'">姓名</th>
-    		<th sortable="'email'">E-mail</th>
-  		</tr>
+    <thead>
+  		  <tr>
+    			<th sortable="'No'">#</th>
+      		<th sortable="'Name'">姓名</th>
+      		<th sortable="'email'">E-mail</th>
+  		  </tr>
+        <tr *ngFor="let m of members">
+            <td>{{m.id}}</td>
+            <td>{{m.name}}</td>
+            <td>{{m.email}}</td>
+        </tr>
   	</thead>
 </table>

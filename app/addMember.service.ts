@@ -1,15 +1,14 @@
-import { Member } from './members';
-import { MEMBERS } from './mock-members';
+//import { Hero } from './hero';
+//import { HEROES } from './mock-heroes';
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class MembersService {
-
-  getMembers() {
-      return Promise.resolve(MEMBERS);
+export class AddMemberService {
+  /*
+  getHeroes() {
+    return Promise.resolve(HEROES);
   }
-  
-/*
+
   // See the "Take it slow" appendix
   getHeroesSlowly() {
     return new Promise<Hero[]>(resolve =>

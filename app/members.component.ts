@@ -1,35 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-//import { Hero } from './hero';
+import { Member } from './members';
 import { MembersService } from './members.service';
+//import { AddMemberService } from './addMember.service';
 
 @Component({
-  selector: 'my-members',
-  templateUrl: 'app/members.component.html'
+  	selector: 'my-members',
+  	templateUrl: 'app/members.component.html'
 })
 
 export class MembersComponent implements OnInit {
-  /*
-  heroes: Hero[];
-  selectedHero: Hero;
 
-  constructor(
-    private router: Router,
-    private heroService: HeroService) { }
+	members: Member[] = [];
 
-  getHeroes() {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
-  }
+	constructor(
+		private router: Router ,
+		private membersService: MembersService) { 
+	}
 
-  ngOnInit() {
-    this.getHeroes();
-  }
+	ngOnInit() {
+	    this.membersService.getMembers()
+	      	.then(members => this.members = members);
+	}
 
-  onSelect(hero: Hero) { this.selectedHero = hero; }
-
-  gotoDetail() {
-    this.router.navigate(['/detail', this.selectedHero.id]);
-  }
-  */
+  	addMember() {
+      	this.router.navigate(['/addMember']);
+    }
 }
