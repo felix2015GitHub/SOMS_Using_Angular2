@@ -9,26 +9,12 @@ import { OrdersService } from './orders.service';
 })
 
 export class OrdersComponent implements OnInit {
-  /*
-  heroes: Hero[];
-  selectedHero: Hero;
 
-  constructor(
-    private router: Router,
-    private heroService: HeroService) { }
+    constructor(
+        private router: Router ) { 
+    }
 
-  getHeroes() {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
-  }
-
-  ngOnInit() {
-    this.getHeroes();
-  }
-
-  onSelect(hero: Hero) { this.selectedHero = hero; }
-
-  gotoDetail() {
-    this.router.navigate(['/detail', this.selectedHero.id]);
-  }
-  */
+    addOrder() {
+        this.router.navigate(['/addOrder']);
+    }
 }

@@ -3,7 +3,9 @@ import { HomeComponent } from './home.component';
 import { MembersComponent } from './members.component';
 import { AddMemberComponent } from './addMember.component';
 import { ProductsComponent } from './products.component';
+import { AddProductComponent } from './addProduct.component';
 import { OrdersComponent } from './orders.component';
+import { AddOrderComponent } from './addOrder.component';
 
 const routes: RouterConfig = [
   {
@@ -28,8 +30,16 @@ const routes: RouterConfig = [
     component: ProductsComponent
   },
   {
+    path: 'addProduct',
+    component: AddProductComponent
+  },
+  {
     path: 'orders',
     component: OrdersComponent
+  },
+  {
+    path: 'addOrder',
+    component: AddOrderComponent
   }
 ];
 

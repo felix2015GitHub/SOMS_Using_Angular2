@@ -6,14 +6,17 @@
 <table class="table">
     <thead>
   		  <tr>
-    			<th sortable="'No'">#</th>
-      		<th sortable="'Name'">姓名</th>
-      		<th sortable="'email'">E-mail</th>
+      		  <th sortable="'Name'">姓名</th>
+        		<th sortable="'email'">E-mail</th>
+            <th></th>
   		  </tr>
         <tr *ngFor="let m of members">
-            <td>{{m.id}}</td>
             <td>{{m.name}}</td>
             <td>{{m.email}}</td>
+            <td>
+                <button class="btn btn-primary" type="button">修改</button>
+                <button class="btn btn-danger" type="button">刪除</button> 
+            </td>
         </tr>
   	</thead>
 </table>

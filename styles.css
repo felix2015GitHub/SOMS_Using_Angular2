@@ -7,6 +7,16 @@ body {
   margin: 2em;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #e3f2fd;
+}
+
  /*
   * See https://github.com/angular/angular.io/blob/master/public/docs/_examples/styles.css
   * for the full set of master styles used by the documentation samples

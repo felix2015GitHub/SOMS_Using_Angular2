@@ -8,27 +8,13 @@ import { ProductsService } from './products.service';
   templateUrl: 'app/products.component.html'
 })
 
-export class ProductsComponent implements OnInit {
-  /*
-  heroes: Hero[];
-  selectedHero: Hero;
+export class ProductsComponent {
 
-  constructor(
-    private router: Router,
-    private heroService: HeroService) { }
+  	constructor(
+      	private router: Router ) { 
+  	}
 
-  getHeroes() {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
-  }
-
-  ngOnInit() {
-    this.getHeroes();
-  }
-
-  onSelect(hero: Hero) { this.selectedHero = hero; }
-
-  gotoDetail() {
-    this.router.navigate(['/detail', this.selectedHero.id]);
-  }
-  */
+  	addProduct() {
+        this.router.navigate(['/addProduct']);
+    }
 }

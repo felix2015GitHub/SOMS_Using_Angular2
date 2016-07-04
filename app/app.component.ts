@@ -33,6 +33,11 @@ import { MembersService } from './members.service';
         </div>
       </nav>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Copyright © Felix 2016</span>
+      </div>
+    </footer>
     <router-outlet></router-outlet>
     `,
     directives: [ROUTER_DIRECTIVES],
