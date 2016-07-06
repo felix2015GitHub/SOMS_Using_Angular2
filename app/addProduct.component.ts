@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Product } from './products';
+import { PRODUCTS } from './mock-products';
 //import { AddMemberService } from './addMember.service';
 
 @Component({
@@ -8,5 +10,13 @@ import { Router } from '@angular/router';
 })
 
 export class AddProductComponent {
+	constructor(
+		private router: Router) { 
+	}
 
+	active = true;
+
+	onSubmit() {		
+		this.router.navigate(['/products']);
+	}
 }

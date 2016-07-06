@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Member } from './members';
+import { MEMBERS } from './mock-members';
 //import { AddMemberService } from './addMember.service';
 
 @Component({
@@ -9,4 +11,13 @@ import { Router } from '@angular/router';
 
 export class AddMemberComponent {
 
+	constructor(
+		private router: Router) { 
+	}
+
+	active = true;
+
+	onSubmit() {		
+		this.router.navigate(['/members']);
+	}
 }

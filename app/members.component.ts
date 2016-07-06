@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { Member } from './members';
 import { MembersService } from './members.service';
-//import { AddMemberService } from './addMember.service';
 
 @Component({
   	selector: 'my-members',

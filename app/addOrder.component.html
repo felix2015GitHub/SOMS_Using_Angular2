@@ -10,7 +10,7 @@
 
 <div class="row">
   	<div class="col-sm-12">
-  		<form #f="ngForm">
+  		<form *ngIf="active" (ngSubmit)="onSubmit()" #addMemberForm="ngForm">
       		<div class="row">
         		<div class="col-sm-6" ngControlGroup="name" #name="ngForm">
           			<div class="form-group">

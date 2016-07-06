@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 import { MembersService } from './members.service';
+import { ProductsService } from './products.service';
 
 @Component({
   selector: 'my-app',
@@ -42,10 +43,11 @@ import { MembersService } from './members.service';
     `,
     directives: [ROUTER_DIRECTIVES],
     providers: [
-      MembersService
+        MembersService,
+        ProductsService
     ]
 })
 
 export class AppComponent {
-  title = '訂單管理系統';
+    title = '訂單管理系統';
 }

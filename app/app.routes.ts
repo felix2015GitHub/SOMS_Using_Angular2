@@ -8,41 +8,41 @@ import { OrdersComponent } from './orders.component';
 import { AddOrderComponent } from './addOrder.component';
 
 const routes: RouterConfig = [
-  {
-    path: '',
-    redirectTo: '/home',
-    terminal: true
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'members',
-    component: MembersComponent
-  },
-  {
-    path: 'addMember',
-    component: AddMemberComponent
-  },
-  {
-    path: 'products',
-    component: ProductsComponent
-  },
-  {
-    path: 'addProduct',
-    component: AddProductComponent
-  },
-  {
-    path: 'orders',
-    component: OrdersComponent
-  },
-  {
-    path: 'addOrder',
-    component: AddOrderComponent
-  }
+    {
+        path: '',
+        redirectTo: '/home',
+        terminal: true
+    },
+    {
+        path: 'home',
+        component: HomeComponent
+    },
+    {
+        path: 'members',
+        component: MembersComponent
+    },
+    {
+        path: 'addMember',
+        component: AddMemberComponent
+    },
+    {
+        path: 'products',
+        component: ProductsComponent
+    },
+    {
+        path: 'addProduct',
+        component: AddProductComponent
+    },
+    {
+        path: 'orders',
+        component: OrdersComponent
+    },
+    {
+        path: 'addOrder',
+        component: AddOrderComponent
+    }
 ];
 
 export const APP_ROUTER_PROVIDERS = [
-  provideRouter(routes)
+    provideRouter(routes)
 ];

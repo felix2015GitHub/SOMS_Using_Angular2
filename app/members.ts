@@ -1,5 +1,8 @@
 export class Member {
-  id: number;
-  name: string;
-  email: string;
+  constructor(
+    public id: number,
+    public name: string,
+    public email: string,
+    public alterEgo?: string
+  ) {  }
 }
