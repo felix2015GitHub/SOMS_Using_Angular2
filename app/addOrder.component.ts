@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-//import { AddMemberService } from './addMember.service';
+import { Order } from './orders';
+import { ORDERS } from './mock-orders';
 
 @Component({
   selector: 'my-addOrder',
@@ -9,4 +10,13 @@ import { Router } from '@angular/router';
 
 export class AddOrderComponent {
 
+	constructor(
+		private router: Router) { 
+	}
+
+	active = true;
+
+	onSubmit() {		
+		this.router.navigate(['/orders']);
+	}
 }

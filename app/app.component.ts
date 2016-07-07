@@ -13,7 +13,7 @@ import { OrdersService } from './orders.service';
           <h3>{{title}}</h3>
         </div>
       </div>
-      <nav class="navbar navbar-light navbar-static-top" style="background-color: #e3f2fd;">
+      <nav class="navbar navbar-dark bg-inverse navbar-static-top">
         <div class="container">
           <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
             &#9776;
@@ -37,7 +37,7 @@ import { OrdersService } from './orders.service';
     </div>
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">Copyright © Felix 2016</span>
+        <span class="text-muted" style="color:#fff">Copyright © Felix 2016</span>
       </div>
     </footer>
     <router-outlet></router-outlet>

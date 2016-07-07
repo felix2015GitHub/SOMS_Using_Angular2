@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Product } from './products';
 import { PRODUCTS } from './mock-products';
-//import { AddMemberService } from './addMember.service';
 
 @Component({
   selector: 'my-addProduct',

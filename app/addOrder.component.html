@@ -10,24 +10,54 @@
 
 <div class="row">
   	<div class="col-sm-12">
-  		<form *ngIf="active" (ngSubmit)="onSubmit()" #addMemberForm="ngForm">
-      		<div class="row">
-        		<div class="col-sm-6" ngControlGroup="name" #name="ngForm">
-          			<div class="form-group">
-          				<label for="name" class="col-sm-3 control-label">姓名</label>
-            			<div class="col-sm-9">
-              				<input type="text" class="form-control" required>
-            			</div>
-            		</div>
-          			<div class="form-group">
-          				<label for="email" class="col-sm-3 control-label">Email</label>
-            			<div class="col-sm-9">            				
-              				<input type="text" class="form-control" required>
-            			</div>
-            		</div>
-            	</div>
+  		  <form *ngIf="active" (ngSubmit)="onSubmit()" #addOrderForm="ngForm">
+      		  <div class="row">
+        		    <div class="col-sm-6" ngControlGroup="name" #name="ngForm">
+          			    <div class="form-group">
+          				      <label for="serial" class="col-sm-3 control-label">訂單序號</label>
+            			      <div class="col-sm-9">
+              				      <input type="text" class="form-control" required>
+            			      </div>
+            		    </div>
+                    <br>
+              			<div class="form-group">
+                        <label for="status" class="col-sm-3 control-label">訂單狀態</label>
+                        <div class="col-sm-9">                    
+                            <input type="radio" name="type" value="0" checked>未付款
+                            <input type="radio" name="type" value="1">已付款
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-3 control-label">產品名稱</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="count" class="col-sm-3 control-label">訂購數量</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="orderName" class="col-sm-3 control-label">訂購會員名稱</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="orderEmail" class="col-sm-3 control-label">訂購會員Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
           	</div>
-          	<button class="btn btn-primary col-sm-offset-5" type="submit">新增</button>
+          	<button class="btn btn-secondary col-sm-offset-5" type="submit">新增</button>
         </form>
   	</div>
 </div>
