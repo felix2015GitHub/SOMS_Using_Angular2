@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 import { MembersService } from './members.service';
 import { ProductsService } from './products.service';
+import { OrdersService } from './orders.service';
 
 @Component({
   selector: 'my-app',
@@ -44,7 +45,8 @@ import { ProductsService } from './products.service';
     directives: [ROUTER_DIRECTIVES],
     providers: [
         MembersService,
-        ProductsService
+        ProductsService,
+        OrdersService
     ]
 })
 

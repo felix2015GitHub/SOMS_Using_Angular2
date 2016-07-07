@@ -14,5 +14,17 @@
       		<th sortable="'MemberEmail'">訂購會員E-mail</th>
           <th></th>
   		</tr>
+      <tr *ngFor="let o of orders">
+            <td>{{o.serial}}</td>
+            <td>{{o.status}}</td>
+            <td>{{o.name}}</td>
+            <td>{{o.count}}</td>
+            <td>{{o.orderName}}</td>
+            <td>{{o.orderEmail}}</td>
+            <td>
+                <button class="btn btn-primary" type="button">修改</button>
+                <button class="btn btn-danger" type="button">刪除</button> 
+            </td>
+        </tr>
   	</thead>
 </table>
